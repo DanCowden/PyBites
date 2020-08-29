@@ -19,10 +19,7 @@ def print_game_stats(games_won):
     """
 
     for name, victories in games_won.items():
-        if victories == 0 or victories > 1:
-            game = 'games'
-        else:
-            game = 'game'
+        game = 'game' if victories == 1 else 'games'
 
         print(f'{name} has won {victories} {game}')
 
