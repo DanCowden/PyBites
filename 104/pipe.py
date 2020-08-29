@@ -13,5 +13,4 @@ def split_in_columns(message=message):
 
     message = '|'.join(message)
 
-
     return(message)
