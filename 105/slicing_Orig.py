@@ -23,19 +23,23 @@ def slice_and_dice(text: str = text) -> list:
     results = []
 
     # Strip off both leading and trailing whitespace
+    text = text.strip()
+
     # Split string by \n
-    for line in text.strip().splitlines():
+    text = text.splitlines()
+
+    for line in text:
         # Strip off any leading spaces
         line = line.lstrip()
         # Check if the first character in string is lowercase
         if line[0] in ascii_lowercase:
             # Split line into words
-            words = line.split()
+            line = line.split()
             # Get the last word
+            line = line[-1]
             # strip off trailing . and ! characters
-            last_word = words[-1].rstrip('.!')
-
+            line = line.rstrip('.!')
             # Add last word to the results list
-            results.append(last_word)
+            results.append(line)
 
     return results
