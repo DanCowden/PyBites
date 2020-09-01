@@ -9,14 +9,16 @@ def divide_numbers(numerator, denominator):
     try:
         numerator = int(numerator)
     except ValueError:
-        raise ValueError(f'Could not convert numerator {numerator} '
-                        f'into an integer')
+        raise ValueError(
+            f'Could not convert numerator {numerator} into an integer'
+        )
 
     try:
         denominator = int(denominator)
     except ValueError:
-        raise ValueError(f'Could not convert denominator {denominator} '
-                        f'into an integer')
+        raise ValueError(
+            f'Could not convert denominator {denominator} into an integer'
+        )
 
     try:
         answer = (numerator / denominator)
