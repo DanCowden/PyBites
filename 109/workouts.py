@@ -25,12 +25,9 @@ def get_workout_motd(day):
             Eg. Thursday -> function returns 'Go train Legs'
        - weekend day (value 'Rest'), return CHILL_OUT
     """
-    for workout_day, workout in WORKOUT_SCHEDULE.items():
-        if day == workout_day:
-            if workout == 'Rest':
-                return CHILL_OUT
-            else:
-                return TRAIN.format(workout)
+    workout = WORKOUT_SCHEDULE.get(day)
+    return CHILL_OUT if workout == 'Rest' else TRAIN.format(workout)
+
     pass
 
 day = 'SUNDAY'
