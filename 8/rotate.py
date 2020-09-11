@@ -14,6 +14,9 @@ def rotate(string, n):
 
     return string
 
+    # Can shorten the above function into
+    # return string[n:] + string[:n]
+
 
 if __name__ == '__main__':
     string = 'hello'
