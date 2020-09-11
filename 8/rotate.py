@@ -8,12 +8,16 @@ def rotate(string, n):
        e.g.: rotate('hello', -2) would return lohel
     """
 
+    first = string[n : ]
+    second = string[0 : n]
+    string = first + second
+
     return string
 
 
 if __name__ == '__main__':
     string = 'hello'
-    n = 2
+    n = -2
 
     test = rotate(string, n)
     print(test)
