@@ -22,4 +22,10 @@ def enumerate_names_countries():
        4. Dante      Argentina
        5. Martin     USA
        6. Rodolfo    Mexico"""
+    for n in range(0, len(names)):
+        print(f'{n+1}. {names[n]:<11}{countries[n]}')
     pass
+
+
+if __name__ == '__main__':
+    enumerate_names_countries()
