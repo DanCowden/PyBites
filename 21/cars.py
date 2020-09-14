@@ -12,11 +12,14 @@ cars = {
 def get_all_jeeps(cars=cars):
     """return a comma  + space (', ') separated string of jeep models
        (original order)"""
+    # Converting List to a single string
     return ', '.join(cars['Jeep'])
 
 
 def get_first_model_each_manufacturer(cars=cars):
-    """return a list of matching models (original ordering)"""
+    """
+    return a list of the first car in each dict value list (original ordering)
+    """
     first_car = []
     for value in cars.values():
         first_car.append(value[0])
