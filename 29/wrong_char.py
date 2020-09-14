@@ -35,8 +35,8 @@ def get_index_different_char(chars):
 
 if __name__ == '__main__':
 
-    chars = ['A', 'f', '.', 'Q', 2]
-    # chars = ['.', '{', ' ^', '%', 'a']
+    # chars = ['A', 'f', '.', 'Q', 2]
+    chars = ['.', '{', ' ^', '%', 'a']
 
     test = get_index_different_char(chars)
     print(test)
