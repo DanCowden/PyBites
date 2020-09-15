@@ -26,7 +26,7 @@ def countdown_recursive(start=10):
         print('time is up')
     else:
         print(start)
-        countdown_recursive(start - 1)
+        return countdown_recursive(start - 1)
 
 
 if __name__ == '__main__':
